@@ -1,0 +1,442 @@
+{
+  "trophySetVersion": "01.00",
+  "hasTrophyGroups": false,
+  "lastUpdatedDateTime": "2021-06-22T05:37:12Z",
+  "trophies": [
+    {
+      "trophyId": 0,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-22T05:37:12Z",
+      "trophyType": "platinum",
+      "trophyRare": 2,
+      "trophyEarnedRate": "15.7"
+    },
+    {
+      "trophyId": 1,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T06:47:38Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "88.0"
+    },
+    {
+      "trophyId": 2,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T18:52:47Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "74.4"
+    },
+    {
+      "trophyId": 3,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T19:23:58Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "71.7"
+    },
+    {
+      "trophyId": 4,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-13T00:30:00Z",
+      "trophyType": "silver",
+      "trophyRare": 2,
+      "trophyEarnedRate": "42.5"
+    },
+    {
+      "trophyId": 5,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T18:53:34Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "22.5"
+    },
+    {
+      "trophyId": 6,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T04:07:07Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "61.9"
+    },
+    {
+      "trophyId": 7,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T02:20:18Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "64.9"
+    },
+    {
+      "trophyId": 8,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T05:59:00Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "58.1"
+    },
+    {
+      "trophyId": 9,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T06:30:14Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "59.3"
+    },
+    {
+      "trophyId": 10,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T18:04:51Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "54.4"
+    },
+    {
+      "trophyId": 11,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T18:48:58Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "54.4"
+    },
+    {
+      "trophyId": 12,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T21:45:14Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "52.6"
+    },
+    {
+      "trophyId": 13,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-13T00:23:25Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "51.8"
+    },
+    {
+      "trophyId": 14,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-15T07:01:31Z",
+      "trophyType": "gold",
+      "trophyRare": 2,
+      "trophyEarnedRate": "49.6"
+    },
+    {
+      "trophyId": 15,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T18:22:51Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "80.2"
+    },
+    {
+      "trophyId": 16,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T19:21:38Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "77.0"
+    },
+    {
+      "trophyId": 17,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T06:35:49Z",
+      "trophyType": "silver",
+      "trophyRare": 3,
+      "trophyEarnedRate": "59.7"
+    },
+    {
+      "trophyId": 18,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T19:40:06Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "72.6"
+    },
+    {
+      "trophyId": 19,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T21:12:28Z",
+      "trophyType": "silver",
+      "trophyRare": 3,
+      "trophyEarnedRate": "56.0"
+    },
+    {
+      "trophyId": 20,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T18:38:01Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "76.3"
+    },
+    {
+      "trophyId": 21,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T18:50:43Z",
+      "trophyType": "silver",
+      "trophyRare": 3,
+      "trophyEarnedRate": "75.3"
+    },
+    {
+      "trophyId": 22,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T02:30:31Z",
+      "trophyType": "silver",
+      "trophyRare": 3,
+      "trophyEarnedRate": "58.2"
+    },
+    {
+      "trophyId": 23,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T19:43:41Z",
+      "trophyType": "silver",
+      "trophyRare": 3,
+      "trophyEarnedRate": "62.3"
+    },
+    {
+      "trophyId": 24,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-15T07:21:24Z",
+      "trophyType": "gold",
+      "trophyRare": 2,
+      "trophyEarnedRate": "22.7"
+    },
+    {
+      "trophyId": 25,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T21:12:16Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "44.3"
+    },
+    {
+      "trophyId": 26,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-15T05:54:08Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "30.5"
+    },
+    {
+      "trophyId": 27,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-15T06:03:00Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "49.9"
+    },
+    {
+      "trophyId": 28,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-15T05:18:40Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "46.2"
+    },
+    {
+      "trophyId": 29,
+      "trophyHidden": true,
+      "earned": true,
+      "earnedDateTime": "2021-06-14T06:11:23Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "38.3"
+    },
+    {
+      "trophyId": 30,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-15T06:32:48Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "49.5"
+    },
+    {
+      "trophyId": 31,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T06:55:12Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "48.5"
+    },
+    {
+      "trophyId": 32,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T18:09:02Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "60.7"
+    },
+    {
+      "trophyId": 33,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-22T05:37:12Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "16.2"
+    },
+    {
+      "trophyId": 34,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-15T06:49:02Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "39.5"
+    },
+    {
+      "trophyId": 35,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T06:15:18Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "48.6"
+    },
+    {
+      "trophyId": 36,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T05:54:59Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "42.3"
+    },
+    {
+      "trophyId": 37,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T19:26:17Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "69.6"
+    },
+    {
+      "trophyId": 38,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-15T06:27:20Z",
+      "trophyType": "gold",
+      "trophyRare": 2,
+      "trophyEarnedRate": "16.9"
+    },
+    {
+      "trophyId": 39,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-22T05:29:35Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "41.7"
+    },
+    {
+      "trophyId": 40,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T18:17:48Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "57.5"
+    },
+    {
+      "trophyId": 41,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T02:00:02Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "66.1"
+    },
+    {
+      "trophyId": 42,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-11T15:20:16Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "69.7"
+    },
+    {
+      "trophyId": 43,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-14T07:41:10Z",
+      "trophyType": "silver",
+      "trophyRare": 2,
+      "trophyEarnedRate": "31.0"
+    },
+    {
+      "trophyId": 44,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-13T04:32:17Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "52.7"
+    },
+    {
+      "trophyId": 45,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-12T19:25:51Z",
+      "trophyType": "bronze",
+      "trophyRare": 3,
+      "trophyEarnedRate": "50.5"
+    },
+    {
+      "trophyId": 46,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-14T06:57:09Z",
+      "trophyType": "bronze",
+      "trophyRare": 2,
+      "trophyEarnedRate": "49.6"
+    }
+  ],
+  "rarestTrophies": [
+    {
+      "trophyId": 0,
+      "trophyHidden": false,
+      "earned": true,
+      "earnedDateTime": "2021-06-22T05:37:12Z",
+      "trophyType": "platinum",
+      "trophyRare": 2,
+      "trophyEarnedRate": "15.7"
+    }
+  ],
+  "totalItemCount": 47
+}
