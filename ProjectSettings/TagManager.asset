@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - TrophySpawn
+  - Button
+  - Trophy
+  - GameEntry
   layers:
   - Default
   - TransparentFX

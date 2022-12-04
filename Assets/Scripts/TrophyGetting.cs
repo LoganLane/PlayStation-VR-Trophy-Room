@@ -4,6 +4,7 @@ using UnityEngine;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
@@ -19,8 +20,7 @@ public class TrophyGetting : MonoBehaviour
     
 
     private JArray textArray;
-
-    //private Root[] allTrophiesDecoded;
+    
 
     private List<Root> allTrophiesDecoded;
     private List<Root> earnedTrophiesDecoded;
@@ -36,34 +36,27 @@ public class TrophyGetting : MonoBehaviour
 
 
     public Canvas TrophySelectionCanvas;
-    
     public GameObject platinumTrophyObject;
     public GameObject goldTrophyObject;
     public GameObject silverTrophyObject;
     public GameObject bronzeTrophyObject;
     public GameObject lockedTrophyObject;
-
     private GameObject[] spawnLocations;
-    // Start is called before the first frame update
+
+    
     void Start()
     {
+        spawnLocations = GameObject.FindGameObjectsWithTag("TrophySpawn");
         JSONString = trophyListJsonFile.text;
 
-        spawnLocations = GameObject.FindGameObjectsWithTag("TrophySpawn");
-        //textArray = JArray.Parse(JSONString);
+        
         Debug.Log(JSONString);
         
         TrophyJSONDeserialize();
 
         GameCanvasManager();
         
-        TrophySpawner(0);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+       // TrophySpawner(0);
     }
 
     private void GameCanvasManager()
@@ -81,7 +74,35 @@ public class TrophyGetting : MonoBehaviour
 
             GameTileSpawn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = title.trophyTitleName;
             GameTileSpawn.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = title.trophyTitlePlatform;
+            GameTileSpawn.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = title.progress.ToString() + "%";
+            GameTileSpawn.transform.GetChild(4).GetComponent<Slider>().value = title.progress;
+            GameTileSpawn.transform.GetChild(9).GetComponent<TextMeshProUGUI>().text = title.earnedTrophies.platinum.ToString();
+            GameTileSpawn.transform.GetChild(10).GetComponent<TextMeshProUGUI>().text = title.earnedTrophies.gold.ToString();
+            GameTileSpawn.transform.GetChild(11).GetComponent<TextMeshProUGUI>().text = title.earnedTrophies.silver.ToString();
+            GameTileSpawn.transform.GetChild(12).GetComponent<TextMeshProUGUI>().text = title.earnedTrophies.bronze.ToString();
+            
+            GameTileSpawn.transform.GetChild(0).GetComponent<Button>().onClick.AddListener(delegate { onButtonTapped(GameTileSpawn.transform.GetSiblingIndex()); });
+
+            index++;
         }
+
+        /*GameObject[] buttons = GameObject.FindGameObjectsWithTag("Button");
+
+        GameObject[] gameEntries = GameObject.FindGameObjectsWithTag("GameEntry");
+        for (int i = 0; i < buttons.Length; i++)
+        {
+           // buttons[i].onClick.AddListener(delegate { onButtonTapped(i);});
+           Debug.Log(i);
+           buttons[i].GetComponent<Button>().onClick.AddListener(() => onButtonTapped(i));
+        }*/
+        
+        
+    }
+
+    public void onButtonTapped(int selection)
+    {
+        Debug.Log(selection);
+        TrophySpawner(selection);
     }
 
     private void TrophyJSONDeserialize()
@@ -105,30 +126,27 @@ public class TrophyGetting : MonoBehaviour
             var appendRef = JsonConvert.DeserializeObject<Root>(earnedTrophies[i].ToString());
             earnedTrophiesDecoded.Add(appendRef);
         }
-        
-        Debug.Log(earnedTrophiesDecoded[0].trophies[0].trophyName);
-        Debug.Log(earnedTrophiesDecoded[0].trophies[0].earned);
-        
-        /*var spawnLocations = GameObject.FindGameObjectsWithTag("TrophySpawn");
-        foreach (var spawn in spawnLocations)
-        {
-            var TrophySpawn = Instantiate(goldTrophyObject, spawnLocations[index].transform.position, Quaternion.Euler(-90, 0, 0));
-            var imageRef = TrophySpawn.transform.GetChild(2).transform.GetChild(0).GetComponent<RawImage>();
-            StartCoroutine(downloadImage(trophyList.trophyTitles[index].trophyTitleIconUrl, imageRef));
-            index++;
-        }*/
     }
 
     private void TrophySpawner(int gameSelection)
     {
+        var existingTrophies = GameObject.FindGameObjectsWithTag("Trophy");
+        
+        if (existingTrophies.Length > 1)
+        {
+            foreach (var trophy in existingTrophies)
+            {
+                Destroy(trophy);
+            }
+        }
+        
         for (int i = 0; i < earnedTrophiesDecoded[gameSelection].trophies.Count; i++)
         {
-            Debug.Log(earnedTrophiesDecoded[gameSelection].trophies[i].earned);
             if (earnedTrophiesDecoded[gameSelection].trophies[i].earned)
             {
-                //var spawn = Instantiate(goldTrophyObject, spawnLocations[i].transform.position, Quaternion.Euler(-90, 0, 0));
+                
                 var trophyType = earnedTrophiesDecoded[gameSelection].trophies[i].trophyType;
-
+                
                 switch (trophyType)
                 {
                     case "platinum":
@@ -136,21 +154,33 @@ public class TrophyGetting : MonoBehaviour
                         var imagerefPlatinum = spawn.transform.GetChild(4).transform.GetChild(0).GetComponent<RawImage>();
                         StartCoroutine(downloadImage(allTrophiesDecoded[gameSelection].trophies[i].trophyIconUrl,
                             imagerefPlatinum));
+                        var TitleRef = spawn.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0)
+                                .GetComponent<TextMeshProUGUI>().text =
+                            allTrophiesDecoded[gameSelection].trophies[i].trophyName;
+                        var DescRef = spawn.transform.GetChild(0).transform.GetChild(0).transform.GetChild(1)
+                                .GetComponent<TextMeshProUGUI>().text =
+                            allTrophiesDecoded[gameSelection].trophies[i].trophyDetail;
+                        var DateRef = spawn.transform.GetChild(0).transform.GetChild(0).transform.GetChild(2)
+                                .GetComponent<TextMeshProUGUI>().text = "Earned: " +
+                                                                        earnedTrophiesDecoded[gameSelection].trophies[i].earnedDateTime.ToString();
+                        var EarnRef = spawn.transform.GetChild(0).transform.GetChild(0).transform.GetChild(3)
+                                .GetComponent<TextMeshProUGUI>().text = "Rarity: " +
+                                                                        earnedTrophiesDecoded[gameSelection].trophies[i].trophyEarnedRate + " %";
                         break;
                     case "gold":
                         spawn = Instantiate(goldTrophyObject, spawnLocations[i].transform.position, Quaternion.Euler(-90, 0, 0));
                         var imageRefGold = spawn.transform.GetChild(2).transform.GetChild(0).GetComponent<RawImage>();
                         StartCoroutine(downloadImage(allTrophiesDecoded[gameSelection].trophies[i].trophyIconUrl, imageRefGold));
-                        var TitleRef = spawn.transform.GetChild(1).transform.GetChild(0).transform.GetChild(0)
+                        TitleRef = spawn.transform.GetChild(1).transform.GetChild(0).transform.GetChild(0)
                                 .GetComponent<TextMeshProUGUI>().text =
                             allTrophiesDecoded[gameSelection].trophies[i].trophyName;
-                        var DescRef = spawn.transform.GetChild(1).transform.GetChild(0).transform.GetChild(1)
+                        DescRef = spawn.transform.GetChild(1).transform.GetChild(0).transform.GetChild(1)
                                 .GetComponent<TextMeshProUGUI>().text =
                             allTrophiesDecoded[gameSelection].trophies[i].trophyDetail;
-                        var DateRef = spawn.transform.GetChild(1).transform.GetChild(0).transform.GetChild(2)
+                        DateRef = spawn.transform.GetChild(1).transform.GetChild(0).transform.GetChild(2)
                                 .GetComponent<TextMeshProUGUI>().text = "Earned: " +
                             earnedTrophiesDecoded[gameSelection].trophies[i].earnedDateTime.ToString();
-                        var EarnRef = spawn.transform.GetChild(1).transform.GetChild(0).transform.GetChild(3)
+                        EarnRef = spawn.transform.GetChild(1).transform.GetChild(0).transform.GetChild(3)
                                 .GetComponent<TextMeshProUGUI>().text = "Rarity: " +
                             earnedTrophiesDecoded[gameSelection].trophies[i].trophyEarnedRate + " %";
                         break;
